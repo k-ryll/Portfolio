@@ -1,19 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
 
-
 :root{
     --bg-color: #fff0f3;
-    --color-main:pink;
-    --color-accent:rgb(153, 41, 93);
-    --color-accent-100:#6e6b6b;
+    --color-main: pink;
+    --color-accent: rgb(153, 41, 93);
+    --color-accent-100: #6e6b6b;
     --color-link: #007BFF;
 }
 
-/*Css reset*/
-
-
 html, body, div, span, applet, object, iframe,
- p, blockquote, pre,
+p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
@@ -25,42 +21,49 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup, 
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
+
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
-	display: block;
+    display: block;
 }
+
 body {
-	line-height: 1;
+    line-height: 1;
 }
+
 ol, ul {
-	list-style: none;
+    list-style: none;
 }
+
 blockquote, q {
-	quotes: none;
+    quotes: none;
 }
+
 blockquote:before, blockquote:after,
 q:before, q:after {
-	content: '';
-	content: none;
+    content: '';
+    content: none;
 }
+
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
 }
 
 html {
     box-sizing: border-box;
-  }
-  *, *:before, *:after {
+}
+
+*, *:before, *:after {
     box-sizing: inherit;
-  }
+}
 
 body {
     background-color: var(--bg-color);
@@ -70,6 +73,7 @@ body {
     margin: 0 auto;
     padding: 0 2rem;
 }
+
 h1, h2 {
     text-align: center;
     color: var(--color-accent);
@@ -82,11 +86,10 @@ h1 {
 
 p {
     font-size: 1.2em;
-    color:black;
+    color: black;
     text-indent: 3rem;
     text-align: justify;
 }
-
 
 a {
     color: var(--color-link);
@@ -118,12 +121,12 @@ th, td {
     border-bottom: 1px solid var(--color-accent);
 }
 
-.container{
+.container {
     display: flex;
     flex-direction: column;
 }
 
-.info{
+.info {
     display: flex;
     gap: 1rem;
     margin-block: 2rem;
@@ -131,37 +134,39 @@ th, td {
 
 .about, .skills, .projects, .contact {
     text-align: left;
-    border: .5px var(--color-accent) solid;
+    border: 0.5px var(--color-accent) solid;
     border-radius: 10px;
     padding-inline: 1rem;
 }
 
-
-.about, .skills{
+.about, .skills {
     float: left;
     width: 50%;
     background-color: var(--color-main);
 }
-.projects{
+
+.projects {
     width: 100%;
     margin-bottom: 2rem;
     background-color: var(--color-main);
 }
-.contact{
+
+.contact {
     width: 100%;
 }
-.contact-info{
+
+.contact-info {
     display: flex;
     justify-content: space-around;
 }
 
-.contact-info li{
+.contact-info li {
     font-size: 1rem;
 }
 
-.contact-info li img{
+.contact-info li img {
     width: 2rem;
-    padding-right: .5rem;
+    padding-right: 0.5rem;
 }
 
 nav ul {
@@ -191,12 +196,94 @@ nav ul li a {
     margin-bottom: 2rem;
 }
 
-.gallery img {
-    width: 30%;
-}
-
 .gallery img:hover {
     cursor: pointer;
-    opacity: .9;
+    opacity: 0.9;
 }
 
+.image-container {
+    position: relative;
+    margin: 10px;
+    width: 30%;
+    background-color: white;
+    border-radius: 8px;
+}
+
+.image-container img {
+    width: 100%;
+    height: 90%;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.heart {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    font-size: 24px;
+    color: pink;
+    cursor: pointer;
+}
+
+.heart.filled {
+    color: red;
+}
+@media (max-width: 1200px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    .about, .skills {
+        width: 48%;
+    }
+
+    .gallery img {
+        width: 45%;
+    }
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    body {
+        padding: 0 1rem;
+    }
+
+    .info {
+        flex-direction: column;
+    }
+
+    .about, .skills {
+        width: 100%;
+    }
+
+    .gallery img {
+        width: 48%;
+    }
+
+    p {
+        font-size: 1rem;
+        text-indent: 2rem;
+    }
+}
+
+@media (max-width: 576px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .contact-info{
+        flex-direction: column;
+    }
+
+    p {
+        font-size: 0.9rem;
+        text-indent: 1rem;
+    }
+
+    .gallery img {
+        width: 100%;
+    }
+}

@@ -4,12 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/styles/styles.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>My Gallery</title>
+    
+    <script>
+        function toggleHeart(heartElement) {
+            heartElement.textContent = heartElement.textContent === 'favorite_border' ? 'favorite' : 'favorite_border';
+            heartElement.classList.toggle('filled');
+        }
+    </script>
 </head>
 <body>
     <header>
         <h1>
-            My Personal  Gallery
+            My Personal Car Gallery
         </h1>
     </header>
 
@@ -21,15 +29,42 @@
     </nav>
 
     <section class="gallery">
-        <img src="/assets/img1.jpg" alt="image">
-        <img src="/assets/img2.jpg" alt="image">
-        <img src="/assets/img3.jpg" alt="image">
-        <img src="/assets/img4.jpg" alt="image">
-        <img src="/assets/img5.jpg" alt="image">
-        <img src="/assets/img6.jpg" alt="image">
-        <img src="/assets/img7.jpg" alt="image">
-        <img src="/assets/img8.jpg" alt="image">
-        <img src="/assets/img9.jpg" alt="image">
+        <div class="image-container">
+            <img src="/assets/img1.jpg" alt="image">
+            <span class="material-icons heart" onclick="toggleHeart(this)">favorite_border</span>
+        </div>
+        <div class="image-container">
+            <img src="/assets/img2.jpg" alt="image">
+            <span class="material-icons heart" onclick="toggleHeart(this)">favorite_border</span>
+        </div>
+        <div class="image-container">
+            <img src="/assets/img3.jpg" alt="image">
+            <span class="material-icons heart" onclick="toggleHeart(this)">favorite_border</span>
+        </div>
+        <div class="image-container">
+            <img src="/assets/img4.jpg" alt="image">
+            <span class="material-icons heart" onclick="toggleHeart(this)">favorite_border</span>
+        </div>
+        <div class="image-container">
+            <img src="/assets/img5.jpg" alt="image">
+            <span class="material-icons heart" onclick="toggleHeart(this)">favorite_border</span>
+        </div>
+        <div class="image-container">
+            <img src="/assets/img6.jpg" alt="image">
+            <span class="material-icons heart" onclick="toggleHeart(this)">favorite_border</span>
+        </div>
+        <div class="image-container">
+            <img src="/assets/img7.jpg" alt="image">
+            <span class="material-icons heart" onclick="toggleHeart(this)">favorite_border</span>
+        </div>
+        <div class="image-container">
+            <img src="/assets/img8.jpg" alt="image">
+            <span class="material-icons heart" onclick="toggleHeart(this)">favorite_border</span>
+        </div>
+        <div class="image-container">
+            <img src="/assets/img9.jpg" alt="image">
+            <span class="material-icons heart" onclick="toggleHeart(this)">favorite_border</span>
+        </div>
 
     </section>
 
