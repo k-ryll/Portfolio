@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+
+
+:root{
+    --bg-color: #fff0f3;
+    --color-main:pink;
+    --color-accent:rgb(153, 41, 93);
+    --color-accent-100:#6e6b6b;
+    --color-link: #007BFF;
+}
+
+/*Css reset*/
+
+
+html, body, div, span, applet, object, iframe,
+ p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+body {
+    background-color: var(--bg-color);
+    font-family: "Roboto Slab", serif;
+    line-height: 1.5;
+    max-width: 75rem;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+h1, h2 {
+    text-align: center;
+    color: var(--color-accent);
+}
+
+h1 {
+    font-size: 2.5em;
+    text-transform: uppercase;
+}
+
+p {
+    font-size: 1.2em;
+    color:black;
+    text-indent: 3rem;
+    text-align: justify;
+}
+
+
+a {
+    color: var(--color-link);
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    margin: 10px 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+th, td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid var(--color-accent);
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+}
+
+.info{
+    display: flex;
+    gap: 1rem;
+    margin-block: 1rem;
+}
+
+.about, .skills, .projects, .contact {
+    text-align: left;
+    border: .5px var(--color-accent) solid;
+    border-radius: 10px;
+    padding-inline: 1rem;
+}
+
+
+.about, .skills{
+    float: left;
+    width: 50%;
+    background-color: var(--color-main);
+}
+.projects{
+    width: 100%;
+    margin-bottom: 1rem;
+    background-color: var(--color-main);
+}
+.contact{
+    width: 100%;
+}
+.contact-info{
+    display: flex;
+    justify-content: space-around;
+}
+
+.contact-info li{
+    font-size: 1rem;
+}
+
+.contact-info li img{
+    width: 2rem;
+    padding-right: .5rem;
+}
+
+nav ul {
+    background-color: var(--color-accent-100);
+    overflow: hidden;
+    color: white;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    padding: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Image Gallery */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.gallery img {
+    width: 30%;
+}
+
+.gallery img:hover {
+    cursor: pointer;
+    opacity: .9;
+}
+
