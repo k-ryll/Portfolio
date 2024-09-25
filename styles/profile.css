@@ -1,0 +1,137 @@
+
+ 
+.user-profile-container {
+   font-size: 16px;
+   line-height: 1.5;
+   margin: auto;
+   width: max-content;
+ }
+  .titles{
+    font-weight: 800;
+    margin-bottom: 1rem;
+  }
+  button{
+    margin-top: 1rem;
+  }
+ .user-profile-left {
+   padding: 2rem;
+   float: left;
+ }
+
+ 
+ .user-profile-panel {
+   text-align: center;
+   padding:2rem;
+   border: 1px solid #dddddd;
+   border-radius: 10px;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+ }
+ 
+ .user-profile-panel img {
+   width: 9rem;
+   height: 9rem;
+   border-radius: 50%;
+   margin-bottom: 2rem;
+ }
+ 
+ .user-socials-panel {
+   margin-top: 2rem;
+
+ }
+ 
+ .user-socials-panel ul {
+   list-style: none;
+   padding: 0;
+   margin: 0;
+ }
+ .user-profile-right,.skills-section{
+  width: max-content;
+ }
+ .user-socials-panel li {
+   margin-right: 2rem;
+   padding-bottom: 1rem;
+   border-bottom: #a6a6a6 1px solid;
+   padding-top: .3rem;
+   width: 100%;
+ }
+ 
+ .user-socials-panel li span {
+   font-size: 1rem;
+   color: #666666;
+ }
+ 
+ .user-socials-panel li img {
+   width: 2rem;
+   height: 2rem;
+   border-radius: 50%;
+   margin-right: 1rem;
+ }
+ 
+ 
+ .user-profile-right {
+   
+   display: flex; 
+   flex-direction: column; 
+   height: 100vh; 
+   padding-block: 2rem;
+   gap: 1rem;
+ }
+ 
+ .user-profile-right span {
+   display: block;
+   font-size: 16px;
+   color: #666666;
+ }
+ 
+ .user-profile-right input {
+   border: none;
+   border-radius: 5px;
+ }
+ 
+ .user-profile-right input:focus {
+   border-color: #3498db;
+ }
+ .user-details span{
+  width:15%;
+ }
+
+ .user-details div{
+  display: flex;
+  padding-bottom: 1rem;
+  border-bottom: solid 1px #a6a6a6;
+  margin-top: .5rem;
+ }
+
+ .skills-section, .user-details, .user-socials-panel{
+  border: 1px solid black;
+  padding: 1rem;
+   padding:2rem;
+   border: 1px solid #dddddd;
+   border-radius: 10px;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+ }
+
+ .skills-section textarea{
+  border: none;
+  width: 100%;
+ }
+
+ .skills-section form{
+  display: grid;
+  column-gap: 2rem;
+  row-gap: .5rem;
+  grid-template-columns: repeat(3, 1fr);
+ }
+
+
+ 
+ @media only screen and (max-width: 768px) {
+   .user-profile-left {
+     width: 100%;
+     float: none;
+   }
+   .user-profile-right {
+     width: 100%;
+     float: none;
+   }
+ }
